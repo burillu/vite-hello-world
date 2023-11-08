@@ -1,15 +1,17 @@
 <template>
   <AppTitle />
+  <AppHero />
 </template>
 
 <script>
 import AppTitle from './components/AppTitle.vue';
+import AppHero from './components/AppHero.vue'
+
 export default {
   name: 'App',
   components: {
-
-    AppTitle
-
+    AppTitle,
+    AppHero
   },
   data() {
     return {
@@ -19,4 +21,10 @@ export default {
 }
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+</style>
